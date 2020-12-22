@@ -16,6 +16,7 @@ ratter = {
 // clear potential residual timer.
 clearTimeout(ratter.Timer);
 
+// function for testing CDN, can delete later.
 ratter.test = function () {
     send_direct("blink");
 }
