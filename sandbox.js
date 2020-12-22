@@ -11,6 +11,7 @@ ratter = {
             15725,15703,15702,15700,16165,16166,16167,16168,16169,16163],
 };
 
+// clear potential residual timer.
 clearTimeout(ratter.Timer);
 
 ratter.nextStep = function () {
