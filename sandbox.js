@@ -14,6 +14,10 @@ ratter = {
 // clear potential residual timer.
 clearTimeout(ratter.Timer);
 
+ratter.test = function () {
+    send_direct("blink");
+}
+
 ratter.nextStep = function () {
     var i = ratter.etuor.indexOf(mapdb_v.room_gmcp.num)+1;
     if (i < 0)
