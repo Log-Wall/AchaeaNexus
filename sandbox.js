@@ -18,8 +18,8 @@ ratter.test = function () {
     send_direct("blink");
 }
 
-ratter.nextStep = function () {
-    var i = ratter.etuor.indexOf(mapdb_v.room_gmcp.num)+1;
+ratter.nextStep = () => {
+    var i = ratter.etuor.indexOf(mapdb_v.room_gmcp.num) + 1;
     if (i < 0)
         return;
     let d = ratter.etuor[i];
@@ -31,7 +31,7 @@ ratter.nextStep = function () {
     send_command("goto " + d);
     clearTimeout(ratter.Timer);
     ratter.Timer = setTimeout(
-        function() {
+        function () {
             display_notice("[Ratter]: Ding", "#ffffff", "#ff3300");
             ratter.nextStep();
         }, 20000);
