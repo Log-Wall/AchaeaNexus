@@ -1,6 +1,7 @@
 'use strict';
 var cy = {};
 var nexMap = {
+    version: 1,
     logging: true,
     mudmap: {},
 	cytoscapeLoaded: false,
